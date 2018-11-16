@@ -12,6 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('user');
+    return view('welcome');
+});
+Route::get('/paket', function () {
+    return view('paket');
 });
 
+Route::resource('paket','paket_controller');
