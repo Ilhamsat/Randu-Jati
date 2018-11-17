@@ -13,8 +13,12 @@ class CreateSupplierModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('supplier_models', function (Blueprint $table) {
+        Schema::create('supplier_barang', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nama');//membuat kolom nama
+            $table->text('alamat');
+            $table->string('no_hp');
+            $table->string('jenis_supply');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateSupplierModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('supplier_models');
+        Schema::dropIfExists('supplier_barang');
     }
 }

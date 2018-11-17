@@ -381,13 +381,14 @@
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-laptop"></i>
-                        <span>Penjualan</span>
+                        <span>Supplier</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/#"><i class="fa fa-circle-o"></i> Add Penjualan Menu</a></li>
+                        <li><a href="/supplier"><i class="fa fa-circle-o"></i>Tabel Supplier</a></li>
+                        <li><a href="{{route('supplier.create')}}"><i class="fa fa-circle-o"></i>Add Supplier</a></li>
                     </ul>
                 </li>
                 <li class="treeview">

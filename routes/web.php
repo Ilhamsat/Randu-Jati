@@ -19,3 +19,4 @@ Route::get('/paket', function () {
 });
 
 Route::resource('paket','paket_controller');
+Route::resource('supplier','supplier_controller');

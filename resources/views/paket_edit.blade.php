@@ -5,7 +5,7 @@
         <!-- Add Your Content Inside -->
         <div class="content">
             <!-- Remove This Before You Start -->
-            <h1>Edit File</h1>
+            <h1 style="text-align: center;">Edit Page</h1>
             <hr>
             <form action="{{ route('paket.update', $data->id) }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}

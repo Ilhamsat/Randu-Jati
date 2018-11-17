@@ -70,7 +70,6 @@ class paket_controller extends Controller
      */
     public function edit($id)
     {
-        //
         $data = paket_model::findOrFail($id);
         return view('paket_edit',compact('data'));
     }
