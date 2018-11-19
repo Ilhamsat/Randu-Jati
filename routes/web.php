@@ -18,3 +18,6 @@ Route::get('/user_create', function () {
     return view('user_create');
 });
 Route::resource('user','UserController');
+Route::resource('barang', 'barang_controller');
+Route::resource('paket','paket_controller');
+Route::resource('supplier','supplier_controller');

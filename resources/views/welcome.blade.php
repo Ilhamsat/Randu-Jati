@@ -29,11 +29,12 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="{{asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -60,129 +61,129 @@
                 <ul class="nav navbar-nav">
                     <!-- Messages: style can be found in dropdown.less-->
                     <li class="dropdown messages-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-envelope-o"></i>
-                            <span class="label label-success">4</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">You have 4 messages</li>
-                            <li>
-                                <!-- inner menu: contains the actual data -->
-                                <ul class="menu">
-                                    <li><!-- start message -->
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
-                                            </div>
-                                            <h4>
-                                                Support Team
-                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                            </h4>
-                                            <p>Why not buy a new awesome theme?</p>
-                                        </a>
-                                    </li>
-                                    <!-- end message -->
-                                    <li>
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <img src="{{asset('dist/img/user3-128x128.jpg')}}" class="img-circle" alt="User Image">
-                                            </div>
-                                            <h4>
-                                                AdminLTE Design Team
-                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                            </h4>
-                                            <p>Why not buy a new awesome theme?</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <img src="{{asset('dist/img/user4-128x128.jpg')}}" class="img-circle" alt="User Image">
-                                            </div>
-                                            <h4>
-                                                Developers
-                                                <small><i class="fa fa-clock-o"></i> Today</small>
-                                            </h4>
-                                            <p>Why not buy a new awesome theme?</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <img src="{{asset('dist/img/user3-128x128.jpg')}}" class="img-circle" alt="User Image">
-                                            </div>
-                                            <h4>
-                                                Sales Department
-                                                <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                            </h4>
-                                            <p>Why not buy a new awesome theme?</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <img src="{{asset('dist/img/user4-128x128.jpg')}}" class="img-circle" alt="User Image">
-                                            </div>
-                                            <h4>
-                                                Reviewers
-                                                <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                            </h4>
-                                            <p>Why not buy a new awesome theme?</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer"><a href="#">See All Messages</a></li>
-                        </ul>
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                            {{--<i class="fa fa-envelope-o"></i>--}}
+                            {{--<span class="label label-success">4</span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu">--}}
+                            {{--<li class="header">You have 4 messages</li>--}}
+                            {{--<li>--}}
+                                {{--<!-- inner menu: contains the actual data -->--}}
+                                {{--<ul class="menu">--}}
+                                    {{--<li><!-- start message -->--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="pull-left">--}}
+                                                {{--<img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">--}}
+                                            {{--</div>--}}
+                                            {{--<h4>--}}
+                                                {{--Support Team--}}
+                                                {{--<small><i class="fa fa-clock-o"></i> 5 mins</small>--}}
+                                            {{--</h4>--}}
+                                            {{--<p>Why not buy a new awesome theme?</p>--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<!-- end message -->--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="pull-left">--}}
+                                                {{--<img src="{{asset('dist/img/user3-128x128.jpg')}}" class="img-circle" alt="User Image">--}}
+                                            {{--</div>--}}
+                                            {{--<h4>--}}
+                                                {{--AdminLTE Design Team--}}
+                                                {{--<small><i class="fa fa-clock-o"></i> 2 hours</small>--}}
+                                            {{--</h4>--}}
+                                            {{--<p>Why not buy a new awesome theme?</p>--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="pull-left">--}}
+                                                {{--<img src="{{asset('dist/img/user4-128x128.jpg')}}" class="img-circle" alt="User Image">--}}
+                                            {{--</div>--}}
+                                            {{--<h4>--}}
+                                                {{--Developers--}}
+                                                {{--<small><i class="fa fa-clock-o"></i> Today</small>--}}
+                                            {{--</h4>--}}
+                                            {{--<p>Why not buy a new awesome theme?</p>--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="pull-left">--}}
+                                                {{--<img src="{{asset('dist/img/user3-128x128.jpg')}}" class="img-circle" alt="User Image">--}}
+                                            {{--</div>--}}
+                                            {{--<h4>--}}
+                                                {{--Sales Department--}}
+                                                {{--<small><i class="fa fa-clock-o"></i> Yesterday</small>--}}
+                                            {{--</h4>--}}
+                                            {{--<p>Why not buy a new awesome theme?</p>--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="pull-left">--}}
+                                                {{--<img src="{{asset('dist/img/user4-128x128.jpg')}}" class="img-circle" alt="User Image">--}}
+                                            {{--</div>--}}
+                                            {{--<h4>--}}
+                                                {{--Reviewers--}}
+                                                {{--<small><i class="fa fa-clock-o"></i> 2 days</small>--}}
+                                            {{--</h4>--}}
+                                            {{--<p>Why not buy a new awesome theme?</p>--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</li>--}}
+                            {{--<li class="footer"><a href="#">See All Messages</a></li>--}}
+                        {{--</ul>--}}
                     </li>
                     <!-- Notifications: style can be found in dropdown.less -->
                     <li class="dropdown notifications-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-bell-o"></i>
-                            <span class="label label-warning">10</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">You have 10 notifications</li>
-                            <li>
-                                <!-- inner menu: contains the actual data -->
-                                <ul class="menu">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                                            page and may cause design problems
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-users text-red"></i> 5 new members joined
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-user text-red"></i> You changed your username
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer"><a href="#">View all</a></li>
-                        </ul>
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                            {{--<i class="fa fa-bell-o"></i>--}}
+                            {{--<span class="label label-warning">10</span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu">--}}
+                            {{--<li class="header">You have 10 notifications</li>--}}
+                            {{--<li>--}}
+                                {{--<!-- inner menu: contains the actual data -->--}}
+                                {{--<ul class="menu">--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<i class="fa fa-users text-aqua"></i> 5 new members joined today--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the--}}
+                                            {{--page and may cause design problems--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<i class="fa fa-users text-red"></i> 5 new members joined--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<i class="fa fa-shopping-cart text-green"></i> 25 sales made--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<i class="fa fa-user text-red"></i> You changed your username--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</li>--}}
+                            {{--<li class="footer"><a href="#">View all</a></li>--}}
+                        {{--</ul>--}}
                     </li>
                     <!-- Tasks: style can be found in dropdown.less -->
                     <li class="dropdown tasks-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-flag-o"></i>
-                            <span class="label label-danger">9</span>
-                        </a>
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                            {{--<i class="fa fa-flag-o"></i>--}}
+                            {{--<span class="label label-danger">9</span>--}}
+                        {{--</a>--}}
                         <ul class="dropdown-menu">
                             <li class="header">You have 9 tasks</li>
                             <li>
@@ -259,7 +260,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
-                            <span class="hidden-xs">Alexander Pierce</span>
+                            <span class="hidden-xs">Admin Randujati</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
@@ -315,7 +316,7 @@
                     <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Alexander Pierce</p>
+                    <p>Admin Randujati</p>
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
@@ -350,7 +351,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/user"><i class="fa fa-circle-o"></i> Tampil User</a></li>
+                        <li><a href="/user"><i class="fa fa-circle-o"></i> Tabel User</a></li>
                         <li><a href="{{route('user.create')}}"><i class="fa fa-circle-o"></i> Tambah User</a></li>
                     </ul>
                 </li>
@@ -363,7 +364,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/#"><i class="fa fa-circle-o"></i> Add Barang </a></li>
+                        <li><a href="{{route('barang.index')}}"><i class="fa fa-circle-o"></i> Tabel Barang </a></li>
+                        <li><a href="{{route('barang.create')}}"><i class="fa fa-circle-o"></i> Tambah Barang </a></li>
                     </ul>
                 </li>
                 <li class="treeview">
@@ -375,53 +377,55 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/#"><i class="fa fa-circle-o"></i> Add Paket</a></li>
+                        <li><a href="/paket"><i class="fa fa-circle-o"></i> Tabel Paket</a></li>
+                        <li><a href="{{route('paket.create')}}"><i class="fa fa-circle-o"></i> Tambah Paket</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-laptop"></i>
-                        <span>Penjualan</span>
+                        <span>Supplier</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/#"><i class="fa fa-circle-o"></i> Add Penjualan Menu</a></li>
+                        <li><a href="/supplier"><i class="fa fa-circle-o"></i> Tabel Supplier</a></li>
+                        <li><a href="{{route('supplier.create')}}"><i class="fa fa-circle-o"></i> Tambah Supplier</a></li>
                     </ul>
                 </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-table"></i> <span>Tables</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="{{asset('pages/tables/simple.html')}}"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                        <li><a href="{{asset('pages/tables/data.html')}}"><i class="fa fa-circle-o"></i> Data tables</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-folder"></i> <span>Examples</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="{{asset('pages/examples/invoice.html')}}"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                        <li><a href="{{asset('pages/examples/profile.html')}}"><i class="fa fa-circle-o"></i> Profile</a></li>
-                        <li><a href="{{asset('pages/examples/login.html')}}"><i class="fa fa-circle-o"></i> Login</a></li>
-                        <li><a href="{{asset('pages/examples/register.html')}}"><i class="fa fa-circle-o"></i> Register</a></li>
-                        <li><a href="{{asset('pages/examples/lockscreen.html')}}"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                        <li><a href="{{asset('pages/examples/404.html')}}"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                        <li><a href="{{asset('pages/examples/500.html')}}"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                        <li><a href="{{asset('pages/examples/blank.html')}}"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-                        <li><a href="{{asset('pages/examples/pace.html')}}"><i class="fa fa-circle-o"></i> Pace Page</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+                {{--<li class="treeview">--}}
+                    {{--<a href="#">--}}
+                        {{--<i class="fa fa-table"></i> <span>Tables</span>--}}
+                        {{--<span class="pull-right-container">--}}
+              {{--<i class="fa fa-angle-left pull-right"></i>--}}
+            {{--</span>--}}
+                    {{--</a>--}}
+                    {{--<ul class="treeview-menu">--}}
+                        {{--<li><a href="{{asset('pages/tables/simple.html')}}"><i class="fa fa-circle-o"></i> Simple tables</a></li>--}}
+                        {{--<li><a href="{{asset('pages/tables/data.html')}}"><i class="fa fa-circle-o"></i> Data tables</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+                {{--<li class="treeview">--}}
+                    {{--<a href="#">--}}
+                        {{--<i class="fa fa-folder"></i> <span>Examples</span>--}}
+                        {{--<span class="pull-right-container">--}}
+              {{--<i class="fa fa-angle-left pull-right"></i>--}}
+            {{--</span>--}}
+                    {{--</a>--}}
+                    {{--<ul class="treeview-menu">--}}
+                        {{--<li><a href="{{asset('pages/examples/invoice.html')}}"><i class="fa fa-circle-o"></i> Invoice</a></li>--}}
+                        {{--<li><a href="{{asset('pages/examples/profile.html')}}"><i class="fa fa-circle-o"></i> Profile</a></li>--}}
+                        {{--<li><a href="{{asset('pages/examples/login.html')}}"><i class="fa fa-circle-o"></i> Login</a></li>--}}
+                        {{--<li><a href="{{asset('pages/examples/register.html')}}"><i class="fa fa-circle-o"></i> Register</a></li>--}}
+                        {{--<li><a href="{{asset('pages/examples/lockscreen.html')}}"><i class="fa fa-circle-o"></i> Lockscreen</a></li>--}}
+                        {{--<li><a href="{{asset('pages/examples/404.html')}}"><i class="fa fa-circle-o"></i> 404 Error</a></li>--}}
+                        {{--<li><a href="{{asset('pages/examples/500.html')}}"><i class="fa fa-circle-o"></i> 500 Error</a></li>--}}
+                        {{--<li><a href="{{asset('pages/examples/blank.html')}}"><i class="fa fa-circle-o"></i> Blank Page</a></li>--}}
+                        {{--<li><a href="{{asset('pages/examples/pace.html')}}"><i class="fa fa-circle-o"></i> Pace Page</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+                {{--<li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>--}}
                 <li class="header">LABELS</li>
                 <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
@@ -452,10 +456,9 @@
     <!-- /.content-wrapper -->
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
-            <b>Version</b> 2.4.0
+            <b>Version</b> 0.0.1
         </div>
-        <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-        reserved.
+        <strong>Copycopyan &copy; 2018-2019 <a href="https://adminlte.io">PowerRangers Studio</a>.</strong> Hak cipta dilindungi Power Rangers.
     </footer>
 
     <!-- Control Sidebar -->
