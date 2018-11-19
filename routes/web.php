@@ -14,4 +14,5 @@
 Route::get('/', function () {
     return view('user');
 });
+Route::resource('barang', 'barang_controller');
 
