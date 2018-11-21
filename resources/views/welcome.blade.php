@@ -268,7 +268,7 @@
                                 <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 
                                 <p>
-                                    Ilham Satriadi - Web Developer
+                                    Admin Randujati - Web Developer
                                     <small>Member since Nov. 2012</small>
                                 </p>
                             </li>
@@ -337,12 +337,8 @@
                 <li class="active treeview">
                     <a href="#">
                         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                        <span class="pull-right-container">
-                          <i class="fa fa-angle-left pull-right"></i>
-                        </span>
                     </a>
-                </li>
-                <li class="treeview">
+                </li> <li class="treeview">
                     <a href="#">
                         <i class="fa fa-laptop"></i>
                         <span>User</span>
@@ -355,6 +351,7 @@
                         <li><a href="{{route('user.create')}}"><i class="fa fa-circle-o"></i> Tambah User</a></li>
                     </ul>
                 </li>
+
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-laptop"></i>
@@ -440,13 +437,10 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Dashboard
+                RanduJati
                 <small>Control panel</small>
             </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Dashboard</li>
-            </ol>
+
         </section>
 
     @yield('content')

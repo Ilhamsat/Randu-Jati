@@ -94,6 +94,8 @@ class supplier_controller extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = supplierModel::where('id',$id)->first();
+        $data->delete();
+        return redirect()->route('supplier.index')->with('alert-success','Data berhasil dihapus!');
     }
 }
